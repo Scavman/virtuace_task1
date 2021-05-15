@@ -8,13 +8,11 @@ public class RecursiveNumCounter {
     public RecursiveNumCounter() {
     }
 
-    public int count(int num){
+    public void count(int num){
         System.out.println(startingNum);
         startingNum++;
         if(num >= startingNum)
-            return count(num);
-        else
-            startingNum = startingNumber;
-        return 0;
+            count(num);
+        startingNum = startingNumber;
     }
 }
